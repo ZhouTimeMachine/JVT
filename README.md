@@ -20,13 +20,13 @@ pixel-space video diffusion simple</h1>
 
 <p align="center">
     <a href="https://arxiv.org/abs/2611.18549" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/arXiv-2611.18549-b31b1b.svg" alt="arXiv"></a>
-    <a href="https://zhoutimemachine.github.io/jvt/" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/project_page-0F80C0?logo=rocket&amp;logoColor=white" alt="Project Page"></a>
+    <a href="https://zhoutimemachine.github.io/JVT/" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/project_page-0F80C0?logo=rocket&amp;logoColor=white" alt="Project Page"></a>
     <a href="https://huggingface.co/ZhouTimeMachine/JVT" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-checkpoints-yellow" alt="HuggingFace Checkpoints"></a>
     <a href="https://modelscope.cn/models/ZhouTimeMachine/JVT" rel="external nofollow noopener" target="_blank">
     <img src="https://img.shields.io/badge/ModelScope-checkpoints-blueviolet?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDEuNSAyMS4zIDYuOHYxMC40TDEyIDIyLjUgMi43IDE3LjJWNi44TDEyIDEuNXoiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTIuNyA2LjggMTIgMTIuMWw5LjMtNS4zTTEyIDEyLjF2MTAuNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjgiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=&logoColor=white" alt="ModelScope Checkpoints">
     </a>
-    <a href="https://huggingface.co/ZhouTimeMachine/JVT" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-dataset-yellow" alt="HuggingFace Dataset"></a>
-    <a href="https://modelscope.cn/models/ZhouTimeMachine/JVT" rel="external nofollow noopener" target="_blank">
+    <a href="https://huggingface.co/datasets/ZhouTimeMachine/JVT" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-dataset-yellow" alt="HuggingFace Dataset"></a>
+    <a href="https://modelscope.cn/datasets/ZhouTimeMachine/JVT" rel="external nofollow noopener" target="_blank">
     <img src="https://img.shields.io/badge/ModelScope-dataset-blueviolet?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDEuNSAyMS4zIDYuOHYxMC40TDEyIDIyLjUgMi43IDE3LjJWNi44TDEyIDEuNXoiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTIuNyA2LjggMTIgMTIuMWw5LjMtNS4zTTEyIDEyLjF2MTAuNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjgiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=&logoColor=white" alt="ModelScope Dataset">
     </a>
 </p>
