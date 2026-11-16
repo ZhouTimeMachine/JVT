@@ -1,0 +1,13 @@
+# L-16
+name: jvt-camctrl-l-16
+depth: 24
+hidden_size: 1024
+num_heads: 16
+bottleneck_dim: 128
+patch_size: 16
+
+mlp_ratio: 4.0
+attn_drop: 0.0
+proj_drop: 0.0
+
+camera_mode: null # full, extrinsics_only

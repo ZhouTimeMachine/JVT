@@ -1,0 +1,14 @@
+# @package _global_
+
+defaults:
+  - override /dataset: skytimelapse
+  - override /algorithm: dit_video_uncond
+  - override /algorithm/backbone: jvt_uncond
+
+name: rectflow_jvtuncond_skytimelapse
+
+dataset:
+  subdataset_size: null
+
+trainer:
+  max_epoches: 50

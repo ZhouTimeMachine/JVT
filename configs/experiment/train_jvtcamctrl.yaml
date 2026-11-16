@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+  - override /dataset: realestate10k
+  - override /algorithm: camctrl_denoiser
+  - override /trainer: default
+  - override /algorithm/backbone: jvt_camctrl
+
+name: train_jvtcamctrl_re10k
+
+dataset:
+  subdataset_size: 2400000
+
+trainer:
+  max_epoches: 30
+
+  optimizer:
+    # lr: 5e-5
+    lr: 8e-5
+    betas: [0.9, 0.99]
+    weight_decay: 0.01
+
+  lr_scheduler:
+    name: constant_with_warmup
+    # num_warmup_steps: 10000
+    num_warmup_steps: 4000
+    # num_training_steps: 550000
+    num_training_steps: 250000

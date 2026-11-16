@@ -1,0 +1,45 @@
+# Important: Be careful when modifying this file! The fields in file will be overridden by the dataset dependent config file in the `configurations/dataset_experiment` folder so consider making changes there instead! 
+
+defaults:
+  - backbone: jvt_c2v
+  - _self_
+
+name: dit_c2video
+
+# training hyperparameters
+noise_level: random_uniform
+noise_sampling:
+  method: lognormal  # https://arxiv.org/abs/2403.03206 Equation (19)
+  shift: 4
+
+device: cuda
+label_drop_prob: 0.1
+horizontal_flip_prob: 0.5
+
+diffusion:
+  shift: ${algorithm.noise_sampling.shift}
+  t_eps: 5e-3
+  timesteps: 1000
+  clip_noise: 20.0
+  num_classes: ${dataset.num_classes}
+
+  # sampling
+  sampling_timesteps: 50
+  sampling_method: euler
+
+# not latent diffusion, no temporal downsample by default
+temporal_downsampling_factor: 4
+cfg_scale: 4.0
+rg_scale: null
+cfg_interval_begin: 1.0
+cfg_interval_end: 0.0
+backbone:
+  num_classes: ${dataset.num_classes}
+  temporal_downsample: ${algorithm.temporal_downsampling_factor}
+
+
+# dataset-dependent configurations
+x_shape: ${dataset.observation_shape}
+max_frames: ${dataset.max_frames}
+data_mean: ${dataset.data_mean}
+data_std: ${dataset.data_std}

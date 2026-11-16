@@ -1,0 +1,10 @@
+device: cuda
+distributed: false
+
+rank: 0
+gpu: 0
+world_size: 1
+dist_url: env://
+dist_backend: nccl
+
+dist_on_itp: false

@@ -1,0 +1,11 @@
+# configuration parsing starts here
+defaults:
+  - infra: default              # infrastructure yaml file name in configurations/infra folder
+  - _self_
+  - optional algorithm: null    # optional yaml file in configurations/algorithm folder
+  - evaluation: pose_re10k      # evaluation yaml file name in configurations/evaluation folder
+
+debug: false
+seed: 42
+name: eval
+output_dir: outputs/${name}

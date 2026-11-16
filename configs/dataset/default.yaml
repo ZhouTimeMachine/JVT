@@ -1,0 +1,21 @@
+# ----------------------------- must override ---------------------------------
+
+# Directory where the dataset is stored
+name: null
+save_dir: data/${dataset.name}
+metadata_file: data/metadata/${dataset.name}.pt
+# Mean & Std to be used for normalizing inputs to the model
+data_mean: null 
+data_std: null
+
+# ----------------------------- default settings ---------------------------------
+
+# Configuration for lengths and shapes
+resolution: 128 # Resolution of frames of videos in the dataset
+observation_shape: [3, "${dataset.resolution}", "${dataset.resolution}"]
+max_frames: null # Number of sampled frames in each dataset clip
+frame_skip: 1 # Stride for sampling frames
+
+# Data loading configuration
+preload: false # Preload the dataset into CPU memory for faster data loading
+subdataset_size: null # A dataset is split into subdatasets of this size if not null

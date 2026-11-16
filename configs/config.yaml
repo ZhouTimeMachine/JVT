@@ -1,0 +1,13 @@
+# configuration parsing starts here
+defaults:
+  - dataset: ucf101             # dataset yaml file name in configurations/dataset folder
+  - algorithm: dit_c2video      # algorithm yaml file name in configurations/algorithm folder
+  - trainer: default            # experiment yaml file name in configurations/trainer folder
+  - infra: default              # infrastructure yaml file name in configurations/infra folder
+  - _self_
+  - optional experiment: null   # optional yaml file in configurations/experiment folder, overrides algorithm and experiment configurations that are dataset and experiment dependent
+
+debug: false
+seed: 42
+name: dev
+output_dir: outputs

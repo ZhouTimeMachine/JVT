@@ -1,0 +1,5 @@
+# Evaluation details
+
+For class-conditioned and unconditional video generation, we report **FVD@2048**. It is computed using 2048 real videos and 2048 generated videos, following [StyleGAN-V](https://github.com/universome/stylegan-v) and [Latte](https://github.com/Vchitect/Latte).
+
+For camera-conditioned video generation on RealEstate10K, we follow [PoseDiffusion](https://github.com/facebookresearch/PoseDiffusion/blob/re10k/pose_diffusion/datasets/test_names_1800_re10k.txt) to choose test sequences. However, only [1745 sequences](evaluation/dataset/sequences/re10k_test_1745.txt) of the [1832 sequences](evaluation/dataset/sequences/re10k_test_1745.txt) are accessible to us, so we report **FVD@1745** and camera pose accuracy of the 1745 sequences. As the Youtube videos are removed or made private progressively, the available number of sequences may vary over time.

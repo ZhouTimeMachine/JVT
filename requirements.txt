@@ -1,0 +1,19 @@
+torch==2.6.0
+torchvision==0.21.0
+torchcodec==0.2  # conda install ffmpeg, install ffmpeg version 4, 5, 6, 7
+timm==1.0.12
+transformers
+hydra-core
+tensorboard
+rootutils
+roma
+einops
+imageio
+imageio-ffmpeg
+colorama
+matplotlib
+av==14.4.0
+opencv-python
+plyfile
+pandas
+easydict

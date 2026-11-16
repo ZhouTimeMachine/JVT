@@ -1,0 +1,20 @@
+# @package _global_
+
+name: eval_fvd
+
+fake_video_dir: null
+real_seq_id_map: null
+real_video_dir: null
+num_frames: 16
+resolution: 256
+
+batch_size: 8
+num_workers: 12
+
+save_suffix: null
+addi_keys:
+  method: jvt
+  epoch: null
+
+I3D_path: checkpoints/i3d_torchscript.pt
+I3D_url: https://github.com/JunyaoHu/common_metrics_on_video_quality/raw/main/fvd/styleganv/i3d_torchscript.pt

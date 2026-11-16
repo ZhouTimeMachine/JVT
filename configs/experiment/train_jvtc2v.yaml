@@ -1,0 +1,14 @@
+# @package _global_
+
+defaults:
+  - override /dataset: ucf101
+  - override /algorithm: dit_c2video
+  - override /algorithm/backbone: jvt_c2v
+
+name: rectflow_jvtc2v_ucf101
+
+dataset:
+  subdataset_size: 3840000
+
+trainer:
+  max_epoches: 137

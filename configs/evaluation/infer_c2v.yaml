@@ -1,0 +1,30 @@
+# @package _global_
+
+defaults:
+  - override /algorithm: dit_c2video
+  - override /algorithm/backbone: jvt_c2v
+
+batch_size: 8
+resume: null
+
+name: null
+epoch: null
+output_dir: outputs/${name}/epoch_${epoch}_cfg${algorithm.cfg_scale}_rg${algorithm.rg_scale}
+
+# dataset-dependent configurations
+dataset:
+  observation_shape: [3, 256, 256]
+  max_frames: 16
+  frame_skip: 3
+  data_mean: [[[0.5]], [[0.5]], [[0.5]]]
+  data_std: [[[0.5]], [[0.5]], [[0.5]]]
+  num_classes: 101  # for class-to-video on UCF-101
+
+# default sampling settings
+num_samples: 2048
+algorithm:
+  diffusion:
+    sampling_method: euler
+    sampling_timesteps: 50
+  cfg_scale: 4.0
+  rg_scale: null

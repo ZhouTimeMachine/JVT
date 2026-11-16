@@ -1,0 +1,13 @@
+# XL-16
+name: jvt-c2v-inctx-xl-16
+depth: 28
+hidden_size: 1152
+num_heads: 16
+bottleneck_dim: 32
+patch_size: 16
+in_context_len: 0  # 32
+in_context_start: 28  # 9
+
+mlp_ratio: 4.0
+attn_drop: 0.0
+proj_drop: 0.0
