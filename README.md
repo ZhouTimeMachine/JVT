@@ -111,14 +111,14 @@ python evaluation/infer_c2v.py \
 
 ```bash
 # RGB-only generation
-python evaluation/infer_dfot.py \
+python evaluation/infer_camctrl.py \
     dataloader.batch_size=1 \
     evaluation=infer_camctrl \
     output_dir=outputs/infer_re10k-rgb \
     resume=checkpoints/re10k-rgb.safetensors
 
 # RGB-disparity joint generation
-python evaluation/infer_dfot.py \
+python evaluation/infer_camctrl.py \
     dataloader.batch_size=1 \
     evaluation=infer_camctrl_joint \
     output_dir=outputs/infer_re10k-rgbd \

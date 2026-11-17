@@ -13,7 +13,7 @@ REAL_VIDEO_DIR=data/re10k/test_256
 REAL_SEQ_ID_MAP=evaluation/dataset/seq-id-maps/re10k_test1745_256x256_seq8_id_map.json
 
 torchrun --standalone --nnodes=1 --nproc_per_node=$GPUS \
-    evaluation/infer_dfot.py \
+    evaluation/infer_camctrl.py \
     evaluation=infer_camctrl_joint \
     resume=$CHECKPOINT \
     output_dir=$RESULT_DIR
